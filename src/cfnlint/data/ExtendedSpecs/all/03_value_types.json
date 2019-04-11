@@ -349,6 +349,14 @@
           "WriteOnly"
         ]
       },
+      "CloudWatchAlarmAction": {
+        "StringMin": 1,
+        "StringMax": 10
+      },
+      "CloudWatchAlarmActions": {
+        "ListMin": 0,
+        "ListMax": 5
+      },
       "CloudWatchAlarmComparisonOperator": {
         "AllowedValues": [
           "GreaterThanOrEqualToThreshold",

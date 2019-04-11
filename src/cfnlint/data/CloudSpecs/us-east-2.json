@@ -22460,7 +22460,11 @@
           "PrimitiveItemType": "String",
           "Required": false,
           "Type": "List",
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ListValueType": "CloudWatchAlarmActions",
+            "ValueType": "CloudWatchAlarmAction"
+          }
         },
         "AlarmDescription": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmdescription",
@@ -35742,6 +35746,14 @@
         "ReadOnly",
         "WriteOnly"
       ]
+    },
+    "CloudWatchAlarmAction": {
+      "StringMax": 1024,
+      "StringMin": 1
+    },
+    "CloudWatchAlarmActions": {
+      "ListMax": 5,
+      "ListMin": 0
     },
     "CloudWatchAlarmComparisonOperator": {
       "AllowedValues": [

@@ -1049,6 +1049,14 @@
   },
   {
     "op": "add",
+    "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/AlarmActions/Value",
+    "value": {
+      "ListValueType": "CloudWatchAlarmActions",
+      "ValueType": "CloudWatchAlarmAction"
+    }
+  },
+  {
+    "op": "add",
     "path": "/ResourceTypes/AWS::CloudWatch::Alarm/Properties/Statistic/Value",
     "value": {
       "ValueType": "CloudWatchAlarmStatistic"
